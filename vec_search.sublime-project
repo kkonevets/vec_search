@@ -1,0 +1,62 @@
+{
+    "folders": [
+    {
+        "path": "."
+    }],
+    "settings":
+    {
+        "rsync_ssh":
+        {
+            "excludes": [
+                ".env",
+                ".git*",
+                "_build",
+                "blib",
+                "dist",
+                "Build",
+                "build",
+                "index",
+                "*.so",
+                "model",
+                "__pycache__",
+                ".ipynb_checkpoints",
+                "target",
+                "CMakeCache.txt",
+                "build",
+                "CMakeFiles",
+                "cmake_install.cmake",
+                "MANIFEST"
+            ],
+            "options": [
+                "--delete"
+            ],
+            "remotes":
+            {
+                "vec_search": [
+                {
+                    "enabled": 1,
+                    "remote_host": "server3",
+                    "remote_path": "/data/1/vec_search",
+                    "remote_port": 1022,
+                    "remote_user": "konevec"
+                },
+                {
+                    "enabled": 1,
+                    "remote_host": "server1",
+                    "remote_path": "/data/vec_search",
+                    "remote_port": 1022,
+                    "remote_user": "konevec"
+                },
+                {
+                    "enabled": 1,
+                    "remote_host": "server2",
+                    "remote_path": "/home/konevec/vec_search",
+                    "remote_port": 1022,
+                    "remote_user": "konevec"
+                }]
+            },
+            "sync_on_save": true
+        }
+    }
+
+}
